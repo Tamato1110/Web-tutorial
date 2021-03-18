@@ -35,12 +35,6 @@ $.get('./step5', {
  * 將 [show data in div#ajax-output] 修改成合適的值
  * 用瀏覽器打開 `[host]:[port]/exercise.html`，點擊 ajax 提交按鈕並查看結果
  */
-$.get('./step5', {
-  fname: $('#ajax-form input[name=fname]').val(),
-  lname: $('#ajax-form input[name=lname]').val(),
-}/*, (data) => {
-  [show data in div#ajax-output]
-}*/)
     
   // Step 11 code goes here
 )}
