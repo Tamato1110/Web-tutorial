@@ -42,4 +42,6 @@ $.get('./step5', {
   setTimeout(() => {
     $('#ajax-output').html('loaded')
   }, 100)
-  $('#ajax-output').html('loading')
+  {
+  $('#ajax-output').html('loading')    
+  }
