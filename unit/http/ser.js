@@ -18,7 +18,7 @@ const express = require('express')
 // 建立一個 express (也就是網頁伺服器)實體
 const app = express()
 
-const port = [04137]
+const port = [45137]
 
 // handle `/step1` url
 // 處理 `/step1` 網址
