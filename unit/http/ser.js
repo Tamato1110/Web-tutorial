@@ -66,7 +66,7 @@ app.get('/step4', (req, res) => {
 })
 
 // Step 5 code goes here
-/* Step 5:
+/* Step 5:使用者的input共享到server上
  * user input is stored in the first argument of the callback function, aka `req` in the codeㄔㄛˉ
  * open `[host]:[port]/step5?fname=[fname]&lname=[lname]` in a browser to see the result
  * try edit [fname] and [lname]
