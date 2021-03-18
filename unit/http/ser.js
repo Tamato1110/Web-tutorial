@@ -104,5 +104,5 @@ app.use(bodyParser.json())
 app.post('/step7', (req, res) => {
   // `bady-parser` stores parsed data in `req.body`
   // `bady-parser` 將解析好的資料存放在 `req.body`
-  res.send(`Hello, ${req.[property name].fname} ${req.[property name].lname}`)
+  res.send(`Hello, ${req.body.fname} ${req.body.lname}`)
 })
