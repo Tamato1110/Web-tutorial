@@ -18,10 +18,12 @@ $(document).ready(function() {
  * 自己打包資料確實很麻煩，但是也帶來更大的彈性
  * 在瀏覽器中打開 `[host]:[port]/exercise.html`，開啟瀏覽器的開發者工具並切到 network 的分頁
  * 點擊 ajax 的提交按鈕，並且觀察 request
- */
+*/
 $.get('./step5', {
   fname: $('#ajax-form input[name=fname]').val(),
   lname: $('#ajax-form input[name=lname]').val(),
+}, (data) => {
+  $('ajax-output').html(data)
 })
 /* Step 10:
  * edit the `$.get()` in the code snippet of step 9 with this code snippet
@@ -37,4 +39,7 @@ $.get('./step5', {
  */
     
   // Step 11 code goes here
-)}
+  setTimeout(() => {
+    $('#ajax-output').html('loaded')
+  }, 100)
+  $('#ajax-output').html('loading')
