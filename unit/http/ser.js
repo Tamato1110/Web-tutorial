@@ -25,7 +25,7 @@ const port = 45137
 app.get('/step1', (req, res) => {
   // response&response browser
   // 回應瀏覽器
-  res.send(<h1>'hello world'</h1>)
+  res.send('<h1>hello world</h1>')
 })
 
 // start the server
@@ -48,7 +48,8 @@ app.listen(port, () => {
 
 // handle other urls
 // 處理其它網址
-app.use(express.static(`${__dirname}/[path]`))
+app.use(express.static(`${__dirname}/dist`))
+//${__dirname再目前目錄下的}/path這個位置
 
 // Step 4 code goes here
 /* Step 4:
@@ -66,7 +67,7 @@ app.get('/step4', (req, res) => {
 
 // Step 5 code goes here
 /* Step 5:
- * user input is stored in the first argument of the callback function, aka `req` in the code
+ * user input is stored in the first argument of the callback function, aka `req` in the codeㄔㄛˉ
  * open `[host]:[port]/step5?fname=[fname]&lname=[lname]` in a browser to see the result
  * try edit [fname] and [lname]
  * notice the syntax of `?` and `&` in the url
